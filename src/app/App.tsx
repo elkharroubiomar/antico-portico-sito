@@ -3,10 +3,12 @@ import { Phone, MapPin, Clock, Menu, X, Facebook, Instagram, ExternalLink, Downl
 import heroImg from '../images/sala.png';
 import storiaImg from '../images/sala2.png';
 import viniImg from '../images/vino.png';
-import terrazza3Img from '../images/terrazza3.png';
-import piatto1Img from '../images/piatto1.png';
-import piatto4Img from '../images/piatto4.png';
-import sala3Img from '../images/sala3.png';
+import terrazza3Img from '../images/tortelloni.png';
+import piatto1Img from '../images/pastatartufo.png';
+import piatto4Img from '../images/risotto.png';
+import sala3Img from '../images/tartare.png';
+import pane from '../images/pane.png';
+import piattonero from '../images/piattonero.png';
 
 const PHOTOS = {
   hero: heroImg,
@@ -15,8 +17,11 @@ const PHOTOS = {
   gallery: [
     { url: terrazza3Img, alt: "Sala interna con tavoli apparecchiati" },
     { url: piatto1Img, alt: "Gnocchi al ragù, specialità della casa" },
+    { url: piattonero, alt: "Il giardino estivo" },
+    { url: pane, alt: "Il giardino estivo" },
     { url: piatto4Img, alt: "Terrazza estiva sul portico" },
     { url: sala3Img, alt: "Il giardino estivo" },
+
   ],
 };
 
@@ -32,8 +37,8 @@ const content = {
     hero: {
       badge: "Dal 1962 · Treviso",
       title: "Antico Portico",
-      subtitle: "Cucina trevigiana autentica nel cuore della città",
-      subtitleSub: "Authentic Treviso cuisine in the heart of the city",
+      subtitle: "",
+      subtitleSub: "Cucina trevigiana autentica nel cuore della città",
       cta1: "Chiama per prenotare",
       cta2: "Scopri la nostra storia",
     },
@@ -82,17 +87,8 @@ const content = {
             { name: "Baccalà alla vicentina con polenta", price: "" },
           ],
         },
-        {
-          name: "Specialità",
-          items: [
-            { name: "Fiori di zucca ripieni in pastella", price: "" },
-            { name: "Seppie in umido con polenta bianca", price: "" },
-            { name: "Soufflé al radicchio e taleggio", price: "" },
-            { name: "Tiramisù della nonna", price: "" },
-          ],
-        },
       ] as Category[],
-      allergeni: "Per informazioni sugli allergeni, il nostro personale è a disposizione.",
+      allergeni: "Per il menù completo e informazioni sugli allergeni, il nostro personale è a disposizione.",
       cta: "Scarica il menù completo (PDF)",
     },
     vini: {
@@ -137,7 +133,8 @@ const content = {
       email: "anticoporticotreviso@gmail.com",
       orariTitle: "Orari di apertura",
       hours: [
-        { day: "Lunedì e Martedì", time: "Chiuso" },
+        { day: "Lunedì", time: "11:30–15:00" },
+        { day: "Martedì", time: "Chiuso" },
         { day: "Mer - Sab", time: "10:30–15:00 · 18:30–23:00" },
         { day: "Domenica", time: "10:30–15:00 · 18:30–22:00" },
       ],
@@ -157,7 +154,7 @@ const content = {
     hero: {
       badge: "Since 1962 · Treviso",
       title: "Antico Portico",
-      subtitle: "Authentic Treviso cuisine in the heart of the city",
+      subtitle: "",
       subtitleSub: "Cucina trevigiana autentica nel cuore della città",
       cta1: "Call to reserve",
       cta2: "Discover our story",
@@ -183,41 +180,32 @@ const content = {
         {
           name: "Starters",
           items: [
-            { name: "Sopressa with grilled polenta", price: "9" },
-            { name: "Lardo di Colonnata with crostini", price: "10" },
-            { name: "Marinated grilled vegetables in oil", price: "8" },
-            { name: "Beef carpaccio with rocket and grana", price: "12" },
+            { name: "Sopressa with grilled polenta", price: "" },
+            { name: "Lardo di Colonnata with crostini", price: "" },
+            { name: "Marinated grilled vegetables in oil", price: "" },
+            { name: "Beef carpaccio with rocket and grana", price: "" },
           ],
         },
         {
           name: "First Courses",
           items: [
-            { name: "Bigoli with duck ragù", price: "14" },
-            { name: "Risotto with Treviso radicchio IGP", price: "15" },
-            { name: "Venetian-style pasta e fagioli", price: "11" },
-            { name: "Tagliatelle with seasonal black truffle", price: "18" },
+            { name: "Bigoli with duck ragù", price: "" },
+            { name: "Risotto with Treviso radicchio IGP", price: "" },
+            { name: "Venetian-style pasta e fagioli", price: "" },
+            { name: "Tagliatelle with seasonal black truffle", price: "" },
           ],
         },
         {
           name: "Main Courses",
           items: [
-            { name: "Braised veal cheek in Raboso wine", price: "22" },
-            { name: "Venetian-style liver with white polenta", price: "18" },
-            { name: "Pork ribs with sage and rosemary", price: "17" },
-            { name: "Baccalà alla vicentina with polenta", price: "19" },
-          ],
-        },
-        {
-          name: "Specialties",
-          items: [
-            { name: "Stuffed zucchini blossoms in batter", price: "11" },
-            { name: "Cuttlefish stew with white polenta", price: "20" },
-            { name: "Radicchio and taleggio soufflé", price: "14" },
-            { name: "Grandmother's tiramisù", price: "6" },
+            { name: "Braised veal cheek in Raboso wine", price: "" },
+            { name: "Venetian-style liver with white polenta", price: "" },
+            { name: "Pork ribs with sage and rosemary", price: "" },
+            { name: "Baccalà alla vicentina with polenta", price: "" },
           ],
         },
       ] as Category[],
-      allergeni: "For allergen information, our staff is always at your disposal.",
+      allergeni: "For the full menù and all allergen information, our staff is always at your disposal.",
       cta: "Download full menu (PDF)",
     },
     vini: {
@@ -262,10 +250,10 @@ const content = {
       email: "info@anticoportico.it",
       orariTitle: "Opening hours",
       hours: [
-        { day: "Monday", time: "Closed" },
-        { day: "Tue – Fri", time: "12:00–14:30 · 19:00–22:30" },
-        { day: "Saturday", time: "12:00–14:30 · 19:00–23:00" },
-        { day: "Sunday", time: "12:00–15:00" },
+        { day: "Monday", time: "11:30–15:00" },
+        { day: "Tuesday", time: "closed" },
+        { day: "Wed – Sat", time: "10:30–15:00 · 18:30–22:00" },
+        { day: "Sunday", time: "12:00–15:00 · 18:30–22:00" },
       ],
       parking: "Parking at Piazza dei Signori (5 min walk). Historic center ZTL zone — check access times.",
       note: "Reservations by phone only",
@@ -675,7 +663,7 @@ export default function App() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="strict-origin-when-cross-origin"
-                title="Mare Crudo Treviso"
+                title="Antico Portico Treviso"
               />
             </div>
             <a
